@@ -2,7 +2,7 @@ const router = require("express").Router();
 const Workout = require("../models/workoutModel");
 
 router.get("/api/workouts", (req, res) => {
-    Workout.find().then(function (workout) {
+    Workout.find().then(workout => {
         console.log('workout==>>', workout)
         res.json(workout);
     }).catch(err => {
@@ -34,6 +34,12 @@ router.put("/api/workouts/:id", (req, res) => {
             res.json(workout);
         });
 });
+
+router.get("/api/workouts/range", (req, res) => {
+    Workout.find().then(workout => {
+        res.json(workout);
+    })
+})
 
 
 module.exports = router;
