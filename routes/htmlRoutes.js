@@ -7,15 +7,11 @@ router.get("/stats", (req, res) => {
 
 router.get("/exercise", (req, res) => {
     res.sendFile(path.join(__dirname, "../public/exercise.html"));
-})
+});
 
-// module.exports = function (app) {
-
-
-//     app.get("/exercise", (req, res) => {
-//         res.sendFile(path.join(__dirname, "../public/exercise.html"));
-//     })
-// }
+router.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/index.html"));
+});
 
 
 module.exports = router;
