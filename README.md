@@ -6,8 +6,6 @@ A mongoDB powered fitness tracker allowing the user to complete and add new exer
 * [Installation](#Installation)
 * [Usage](#Usage)
 * [License](#License)
-
-
 * [Questions](#Questions)
 
 ## Installation
@@ -16,9 +14,12 @@ None, simply visit the live link down below.
 The user can add exercises of two types: resistance or cardio, each providing different features.
 ### License
 MIT
-### Collaborators
 
-### Testing
+#### Example Images
+![Adding Exercise](images/addExercise.png)
+
+#### Deployed Website
+[Fitness Tracker](https://floating-coast-00937.herokuapp.com/)
 
 #### Questions?
 If you have questions regarding this program:<br>
