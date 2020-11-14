@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 const databaseUrl = "workout";
 const collections = ["exercises"];
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
+mongoose.connect(`mongodb+srv://clusterAdmin:${process.env.mongodbPass}@cluster0.8pdpi.mongodb.net/workout?retryWrites=true&w=majority` || "mongodb://localhost/workout", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
